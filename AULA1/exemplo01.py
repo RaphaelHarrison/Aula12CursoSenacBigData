@@ -7,5 +7,14 @@ quantidade_estoque = [15, 30, 20, 10, 25]
 print(produtos)
 print(quantidade_estoque)
 
-series = pd.Series(quantidade_estoque)
-print(series)
+series = pd.Series(produtos)
+print((series))
+
+
+# indice personaliado
+estoque = pd.Series(quantidade_estoque, index=produtos)
+print(estoque)
+
+# Tipos
+# print(type(series))
+# print(type(quantidade_estoque))
